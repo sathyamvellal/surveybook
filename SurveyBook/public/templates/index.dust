@@ -1,5 +1,23 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+    <div>
+        <div id="content" class="well">
+        </div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <input class="btn btn-danger" value="Cancel"/>
+                <input class="btn pull-right btn-success" value="Submit"/>
+            </div>
+        </form>
+        <div class="btn-group btn-group-justified">
+            <a id="addtext" class="btn btn-default">+ Text</a>
+            <a id="addlongtext" class="btn btn-default">+ Long Text</a>
+            <a id="addlist" class="btn btn-default">+ List</a>
+            <a id="addselect" class="btn btn-default">+ Select</a>
+        </div>
+    </div>
+
+    <script src="/js/panel.js" type="text/javascript"></script>
+    <script src="/js/content.js" type="text/javascript"></script>
 {/body}
